@@ -1,3 +1,45 @@
+# Dataset Documentation
+- 'fantasies'(Categorical): One of 44 thematical tags associated with the audio
+- 'longterm' (Boolean): denotes if the listener is a long-term user
+- 'user'(ID): User ID of the listener
+- 'story id'(ID): ID of the audio file
+- 'voice id'(ID): ID of the speaker of the audio
+- 'voice type'(Categorical): Type (gender) of the speaker voice
+    - male           6451
+    - female         2036
+    - anonym         1572
+    - male_female     836
+    - female_male     697 
+- 'genre'(Categorical):
+    - Erotic Stories         4944
+    - Sex Sounds             2994
+    - Phone Sex              1014
+    - 360° Audios             823
+    - Sounds of Lovers        738
+    - Moaning Sounds          690
+    - Guided Masturbation     257
+    - Love Letters             95
+    - Affirmations             31
+    - Meditations               6
+- 'language intensity'(Ordinal): intensity of the language used in the audio in three categories:
+    - soft(1)
+    - intense(2)
+    - rough(3)
+- 'timestamp'(datetime): datetime of when the play session was started
+- 'session breakups': date and (categorical) time of day of when the play session started:
+    - Feature Engineering:
+        - session_breakup_date(date): session start date
+        - session_breakups_breakup: time of day when the audio was played:
+            - 'First Peak', 'Early', 'Late Peak', 'OFF'
+- 'story release date'(datetime): datetime of when the audio was released
+- 'kinky score'(Integer): score calculated out of number of associated tags and intensity of the audio
+    - Feature Engineering:
+        - audio_intensity: Intensity level of the audio
+        - audio_kinks: Number of kinks associated with the audio
+                       'Content Types': 'content type', 
+                       'Story Duration': 'story duration',
+                       'Play Duration': 'play duration'})
+
 # Data analysis
 - Document here the project: lewagon_x_femtasy
 - Description: Project Description
