@@ -5,7 +5,7 @@ def read_data():
     '''path = os.path.join(
         os.environ.get('LOCAL_DATA_PATH'), 'raw_data.xlsx'
     )'''
-    test = os.path.dirname()
+    #test = os.path.dirname()
     print(test)
     path = os.path.join(os.path.dirname(__file__)[:-4], 'raw_data', 'raw_data.xlsx')
     print(path)
