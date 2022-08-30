@@ -36,9 +36,15 @@
     - Feature Engineering:
         - audio_intensity: Intensity level of the audio
         - audio_kinks: Number of kinks associated with the audio
-                       'Content Types': 'content type', 
-                       'Story Duration': 'story duration',
-                       'Play Duration': 'play duration'})
+- 'content type'(Enumerated Categorical): One of four content groups that the audio falss into:
+    - 1 = Soul
+    - 2 = Sounds
+    - 3 = Stories
+    - 4 = Series
+- 'story duration'(Integer): Length of audio file in seconds
+- 'play duration'(Integer): Played portion of the audio in seconds
+    - Feature engineering:
+        - play_percentage(Percentage): played portion of the audio as percentage of overall duration
 
 # Data analysis
 - Document here the project: lewagon_x_femtasy
