@@ -15,4 +15,4 @@ def read_data():
     df = pd.read_excel(path)
     return df
 
-print(read_data())
+#print(read_data())
